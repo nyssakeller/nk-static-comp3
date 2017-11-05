@@ -1,0 +1,59 @@
+/*Sidebar styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.top-third {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-area {
+    display: flex;
+    flex-direction: row;
+    left: 15em;
+   
+}
+
+#search-bar,
+button {
+    height: 5em;
+    width: 5em;
+}
+
+#search-bar {
+    width: 90em;
+}
+
+.graph-tabs {
+    display: inline-block;
+}
+
+.circles-and-graph {
+    display: flex;
+    flex-direction: row;    
+}
+#circle1,
+#circle2,
+#circle3 {
+    width: 10em;
+    height: 10em;
+    border: red 2px solid;
+    -moz-border-radius: 5em;
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+    text-align: center;
+}
+
+#bar-graph {
+    height: 10em;
+    width: 15em;
+}
+
+
+
+
+
+
