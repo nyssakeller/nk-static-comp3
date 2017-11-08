@@ -3,54 +3,64 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     </head>
     <body>
         <header class="sidebar">
-            <img id="profile-pic" src="http://cimg.tvgcdn.net/i/r/2010/10/12/d2b8f338-50d2-48c2-8dd4-aae3f00d394b/crop/300x225+0+0/thumbnail/350x262/7cd65698b17ecc0e7e385de7b44e46e4/101011napoleondynamite1.jpg">
-            <h2>Napoleon Dynamite</h2>
-            <div class="interests">
-                <h4>Interests</h4>
-                <h3>Tots</h3>
-                <h3>Chapstick</h3>
-                <h3>Dancing</h3>
-                <h3>Nunchucks</h3>
-                <h3>Endorsing Pedro</h3>
+            <div class="pic-and-name">
+                <img id="profile-pic" src="http://cdn1.theodysseyonline.com/files/2016/01/11/6358807217918207881788031910_vote-for-pedro-300x300.jpg">
+                <h2>Napoleon Dynamite<img id="name-down-arrow" src="https://www.iconsdb.com/icons/preview/color/CFCFCF/arrow-204-xxl.png"></h2>
             </div>
-            <div class="skills">
-                <h4>Skills</h4>
-                <h3>Nunchuck Skills</h3>
-                <h3>Bow Hunting Skills</h3>
-                <h3>Computer Hacking Skills</h3>
-                <h3>Great Skills!</h3>
+            <div class="main">
+                <h4>Main</h4>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/color/CFCFCF/home-2-xxl.png">HOME</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/color/CFCFCF/monitor-xxl.png">JOBS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/blank-file-3-xxl.png">RESUME</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/view-details-xxl.png">TASKS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/today-xxl.png">CALENDAR</h3>
             </div>
-            <div class="friends">
-                <h4>Friends</h4>
-                <h3>Pedro</h3>
-                <h3>Deb</h3>
-                <h3>Tina</h3>
-                <h3>La Fonda</h3>
+            <div class="admin">
+                <h4>Admin</h4>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/add-user-3-xxl.png">USERS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/define-location-xxl.png">LOCATIONS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/notebook-xxl.png">WORKFLOWS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/sharethis-5-xxl.png">SOCIAL</h3>
+            </div>
+            <div class="Categories">
+                <h4>Categories</h4>
+                <h3><img class="sidebar-sqr" src="https://www.iconsdb.com/icons/preview/red/square-xxl.png">Administrative</h3>
+                <h3><img class="sidebar-sqr" src="https://www.iconsdb.com/icons/preview/blue/square-xxl.png">Design</h3>
+                <h3><img class="sidebar-sqr" src="https://www.iconsdb.com/icons/preview/yellow/square-xxl.png">Executive</h3>
+                <h3><img class="sidebar-sqr" src="https://www.iconsdb.com/icons/preview/green/square-xxl.png">Human Resources</h3>
             </div>
         </header>
-        <section class="top-third">
-            <div class="search-area">
-                <button>1</button>
-                <input type="text" id="search-bar">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div>
-            <div class="bottom-half">
-                <div class="Website title">
-                    <h1>Vote for Pedro</h1>
-                    <p class="location">Denver, CO</p>
-                    <p class="preview-link">Preview this post</p>
-                    <button class="open">open</button>
-                    <button>mark</button>
-                    <button>edit</button>
-                    <button>delete</button>
+        <div class="area-under-search">
+            <section class="top-third">
+                <div class="search-area">
+                    <button class="menu-btn search-btns"></button>
+                    <input type="text" id="search-bar">
+                    <button class="user-btn search-btns"></button>
+                    <button class="calendar-btn search-btns"></button>
+                    <button class="idea-btn search-btns"></button>
+                </div>
+            </section>
+            <section class="middle-third">
+                <div class="website-title">
+                    <h1>My Great Skills</h1>
+                    <div class="subheader">
+                        <p class="location"><img id="location-icon" src="https://www.iconsdb.com/icons/preview/gray/pin-8-xxl.png">Denver, CO</p>
+                        <p class="preview-link">Preview this post</p>
+                    </div>
+                    <div class="header-buttons">
+                        <button class="title-btn open">open</button>
+                        <button class="title-btn bookmark-btn"></button>
+                        <button class="title-btn edit-btn"></button>
+                        <button class="title-btn trash-btn"></button>
+                    </div>
                 </div>
                 <header class="tabs-for-body">
-                    <h3 class="graph-tabs">Summary</h3>
+                    <button class="tab-menu"><img id="menu" src="https://www.iconsdb.com/icons/preview/gray/menu-4-xxl.png"></button>
+                    <h3 class="graph-tabs summary active">Summary</h3>
                     <h3 class="graph-tabs">Applicants</h3>
                     <h3 class="graph-tabs">Job Board</h3>
                     <h3 class="graph-tabs">Interviews</h3>
@@ -59,60 +69,87 @@
                     <h3 class="graph-tabs">Notifications</h3>
                 </header>
                 <div class="circles-and-graph">
-                    <div id="circle1">hi</div>
-                    <div id="circle2"></div>
-                    <div id="circle3"></div>
-                    <img id="bar-graph" src="https://www.dyclassroom.com/image/topic/chartjs/v2/bar-graph.png">
+                    <div id="circle1">
+                    <h1 class="circle-text">9,405</h1>
+                    <p>Headshots</p>
+                    </div>
+                    <div id="circle2">
+                    <h1 class="circle-text">5,983</h1>
+                    <p>Nunchucks</p>
+                    </div>
+                    <div id="circle3">
+                    <h1 class="circle-text">1,543</h1>
+                    <p>Votes for Pedro</p>
+                    </div>
+                    <img id="bar-graph" src="http://www.conceptdraw.com/How-To-Guide/picture/GRAPHS-AND-CHARTS-Histograms-Beetles-in-the-river-Thames.png">
                 </div>
-                <div class="job-description-area">
-                    <table>
-                        <th>Job Description</th>
-                        <tr>
-                            <td>Position Title</td>
-                            <td>Campaign Manager</td>
-                        </tr>
-                        <tr>
-                            <td>Location</td>
-                            <td>Denver</td>
-                        </tr>
-                        <tr>
-                            <td>Employment Type</td>
-                            <td>Part-time</td>
-                        </tr>
-                        <tr>
-                            <td>Experience</td>
-                            <td>None</td>
-                        </tr>
-                        <tr>
-                            <td>Status</td>
-                            <td>Taken</td>
-                        </tr>
-                        <tr>
-                            <td>Description</td>
-                            <td>I have great skills. Girls want boyfriends that have great skills, gosh.</td>
-                        </tr>
-                        <tr>
-                            <td>Hiring Lead</td>
-                            <td>Deb</td>
-                        </tr>
-                        <tr>
-                            <td>Approved Salary</td>
-                            <td> Lots of tots.</td>
-                        </tr>
-                    </table>
+            </section>
+            <section class="bottom-third">
+                <div class="job-description-area">   
+                    <article>
+                    <h3>JOB DESCRIPTION<button class="edit-btn">Edit</button></h3>   
+                        <p class="key">Position</p>
+                        <p>Campaign Manager</p>
+                        <hr>
+                        <p class="key">Location</p>
+                        <p>Denver</p>
+                        <hr>
+                        <p class="key">Employment</p>
+                        <p>Part-time</p>
+                        <hr>
+                        <p class="key">Experience</p>
+                        <p>None</p>
+                        <hr>
+                        <p class="key">Status</p>
+                        <p>Taken</p>
+                        <hr>
+                        <p class="key description">Description</p>
+                        <p>Nunchuck skills, bow hunting skills, computer hacking skills. Girls want boyfriends that have great skills.</p>
+                        <hr>    
+                        <p class="key hiring-lead">Hiring Lead</p>
+                        <p><img id="pedro-img" src="http://2.bp.blogspot.com/-sHS9NS_m1Y0/TlGyn8kbITI/AAAAAAAAAjQ/UjXuFH94soU/s640/NapDynamite_035Pyxurz.jpg">Pedro</p> 
+                        <hr>  
+                        <p class="key">Approved Salary</p>
+                        <p> Lots of tots.</p>
+                        
+                    </article>
                 </div>
                 <div class="social-media-area">
-                    <button class="fb social-btn">Post to Facebook</button>
-                    <button class="twitter social-btn">Post to Twitter</button>
-                    <button class="linkedin social-btn">Post to Linkedin</button>
-                    <h3>Link to this Job</h3>
-                    <input type="text" placeholder="www.ihavegreatskills.com">
-                    <h3>Use the Button Widget</h3>
-                    <input type="text" placeholder="www.checkoutmynunchucks.com">
-                    <h3>Upload Resumes by Email</h3>
-                    <input type="text" placeholder="ihearttots@gmail.com">
+                    <button class="fb social-btn">
+                        <p class="post-text">
+                            Post to Facebook
+                        </p>
+                    </button>
+                    <button class="twitter social-btn">
+                        <p class="post-text">
+                            Post to Twitter
+                        </p>
+                    </button>
+                    <button class="linkedin social-btn">
+                        <p class="post-text">
+                            Post to Linkedin
+                        </p>
+                    </button>
+                    <h3 class="social-text"><img class="social-icon" src="https://www.iconsdb.com/icons/preview/dim-gray/globe-xxl.png">Link to this Job</h3>
+                    <p class="social-text">If you'd like to find out more about my great skills, click on this link.</p>
+                    <div class="copy-links">
+                        <input class="copy-input social-input" type="text" placeholder="www.ihavegreatskills.com">
+                        <button class="copy-btn">copy</button="copy-btn">
+                    </div>
+                    <h3 class="social-text"><img class="social-icon" src="https://www.iconsdb.com/icons/preview/dim-gray/banknotes-xxl.png">Buy Some of my Nunchucks</h3>
+                    <p class="social-text">To checkout my nunchucks, click on this link</p>
+                    <div class="copy-links">
+                        <input class="copy-input social-input" type="text" placeholder="www.mynunchucks.com">
+                        <button class="copy-btn">copy</button="copy-btn">
+                    </div>
+                    <h3 class="social-text"><img class="social-icon" src="https://www.iconsdb.com/icons/preview/dim-gray/upload-2-xxl.png">Upload Resumes by Email</h3>
+                    <p class="social-text">If you want to work for me, email me your resume, gosh.</p>
+                    <input class="social-input" type="text" placeholder="ihearttots@gmail.com">
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="scripts.js" type="text/javascript"></script>
     </body>
 

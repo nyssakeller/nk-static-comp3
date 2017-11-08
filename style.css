@@ -1,58 +1,745 @@
-/*Sidebar styles*/
-* {
-    box-sizing: border-box;
+body {
+    color: #696969;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
     margin: 0;
 }
 
-.top-third {
+.area-under-search {
+    background-color: rgba(50, 50, 53, 0.17);
     display: flex;
     flex-direction: column;
 }
 
+.middle-third {
+    border-bottom: solid 2px rgba(238, 229, 229, 0.94);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.bottom-third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    height: 2em;
+    margin: 20px 10px 0 0;
+    width: 2em;
+}
+
+button {
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    color: #696969;
+    height: 5.5em;
+    width: 7em;
+    background-size: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button:hover {
+    color: white;
+    background-color: #800000;
+    border: none;
+}
+
+h2,
+h3,
+h4 {
+    color: #cfcfcf;
+}
+
+
+/*Sidebar Styles*/
+
+.sidebar {
+    background-color: #323235;
+}
+
+#profile-pic {
+    border-radius: 10em;
+    height: 7em;
+    margin: 30px 60px 5px;
+    width: 7em;
+}
+
+h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+}
+
+#name-down-arrow {
+    height: 10px;
+    margin-left: 5px;
+    width: 10px;
+}
+
+h4{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+h2,
+h3 {
+    font-size: 15px;
+    margin: 0px;
+}
+
+h3,
+h4 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main > h3,
+.admin > h3,
+.categories > h3 {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.main > h3:hover,
+.admin > h3:hover,
+.categories > h3:hover {
+    background-color: #1e1e1e;
+}
+
+.sidebar-img {
+    height: 20px;
+    width: 20px;
+}
+
+.sidebar-sqr {
+    height: 1em;
+    margin-left: 20px;
+    width: 1em;
+}
+
+.pic-and-name,
+.main,
+.admin {
+    border-bottom: solid 2px #27282e;
+    padding-bottom: 15px;
+}
+
+
+
+input.checkbox {
+    height: 2em;
+    width: 2em;
+}
+
+/*Search Bar Styles*/
 
 .search-area {
     display: flex;
-    flex-direction: row;
-    left: 15em;
-   
-}
-
-#search-bar,
-button {
-    height: 5em;
-    width: 5em;
+    flex-direction: row;  
 }
 
 #search-bar {
-    width: 90em;
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/search-13-xxl.png');
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    width: 80%;
+}
+
+.menu-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/menu-4-xxl.png');
+}
+
+.menu-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/menu-4-xxl.png');
+}
+
+.user-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/color/999999/add-user-3-xxl.png');
+}
+
+.user-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/add-user-3-xxl.png');
+}
+
+.calendar-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/today-xxl.png');
+}
+
+.calendar-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/today-xxl.png');
+}
+
+.idea-btn{
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/light-bulb-5-xxl.png');
+}
+
+.idea-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/light-bulb-5-xxl.png');
+}
+/*Title Area Styles*/
+
+.website-title {
+    background-color: #ffffff;
+    padding: 20px 40px 60px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: -5px;
+}
+
+.subheader {
+    display: inline-block;
+}
+
+p {
+    color: #696969;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 20px; 
+}
+
+.preview-link {
+    color: #002db0;
+}
+
+#location-icon {
+    height: 10px;
+    margin-right: 0;
+    margin: auto;
+    width: 10px;
+}
+
+.header-buttons {
+    float: right;
+}
+
+.title-btn {
+    background-size: 1.5em;
+    border-radius: 40px;
+    height: 30px !important;
+    margin-right: 20px;
+    width: 30px;
+}
+
+.bookmark-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/color/999999/bookmark-2-xxl.png');
+}
+
+.bookmark-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/bookmark-2-xxl.png');
+}
+
+.edit-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/edit-xxl.png');
+}
+
+.edit-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/edit-xxl.png')
+}
+
+.trash-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/color/999999/delete-xxl.png');
+}
+
+.trash-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/delete-xxl.png');
+}
+
+.open {
+    background-image: url('https://www.iconsdb.com/icons/preview/green/circle-xxl.png');
+    background-size: 10px;
+    background-position: 25% 60%;
+    font-size: 1em;
+    padding: 7px;
+    width: 120px;
+}
+
+.open:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/circle-xxl.png');
+}
+
+/*Data Area*/
+
+.tabs-for-body {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.tab-menu {
+    display: none;
 }
 
 .graph-tabs {
+    color: #696969;
     display: inline-block;
+    font-weight: 700;
+    margin: 10px 1.5rem 20px;
+}
+
+.summary,
+.graph-tabs:hover {
+    color: #800000;
+    border-bottom: 5px #800000 solid;
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .circles-and-graph {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;  
+    margin: 70px 40px 0;  
 }
+
 #circle1,
 #circle2,
 #circle3 {
-    width: 10em;
-    height: 10em;
-    border: red 2px solid;
-    -moz-border-radius: 5em;
-    -webkit-border-radius: 5em;
-    border-radius: 5em;
+    width: 13rem;
+    height: 10rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
     text-align: center;
+    margin: 10px;
+    margin-top: 40px;
 }
+
+.circle-text {
+    margin-top: 45px;
+}
+
+#circle1 > p,
+#circle2 > p,
+#circle3 > p {
+    margin: auto;
+}
+
+#circle1 {
+    border-bottom: #bfbebe solid 15px;
+    border-left: #800000 solid 15px;
+    border-right: #800000 solid 15px;
+    border-top: #800000 solid 15px;
+}
+
+#circle2 {
+    border-bottom: #bfbebe solid 15px; 
+    border-left: #000033 solid 15px;
+    border-right: #bfbebe solid 15px;
+    border-top: #000033 solid 15px;
+}
+
+#circle3 {
+    border-bottom: #806000 solid 15px; 
+    border-left: #bfbebe solid 15px;
+    border-right: #bfbebe solid 15px;
+    border-top: #bfbebe solid 15px;
+}
+
 
 #bar-graph {
-    height: 10em;
-    width: 15em;
+    height: 15em;
+    margin-left: 5%;
+    margin-right: 20px;
+    padding-bottom: 100px;
+    width: 40%;
+}
+
+/*Job Description Styles*/
+
+.job-description-area {
+    width: 60%;
+}
+
+article {
+    background-color: #ffffff;
+    height: 35em;
+    margin: 95px;
+    margin-left: 50px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+article > p {
+    margin: 5px;
+    margin-right: 15px;
+    overflow-wrap: break-word;
+    padding-left: 20px; 
+    width: 45%;
+}
+
+p.key {
+    margin-left: 15px;  
+    width: 15%;
+}
+
+article > h3 {
+    background-color: #800000;
+    font-size: 20px;
+    margin: 0;
+    padding: 25px 0 30px 15px;
+}
+
+hr {
+    color: #800000;
+    width: 95%;
+}
+
+h3 > .edit-btn {
+    background-color: rgb(92, 15, 23);
+    background-position: 15%;
+    background-size: 15px;
+    border: none;
+    color: #cfcfcf;
+    font-size: 10px;
+    height: 3em;
+    margin-left: 15px;
+    padding-left: 20px;
+    width: 6em;
+}
+
+h3 > .edit-btn:hover {
+    background-color: #563030;
+    color: #ffffff;
+}
+
+#pedro-img {
+    border-radius: 50%;
 }
 
 
+.description,
+.hiring-lead {
+    margin-bottom: 15px;
+}
+
+
+
+/*Social Media Styles*/
+
+.social-media-area {
+    display: block;
+    height: 35em;
+    margin-right: 60px;
+    margin-top: 85px;
+    margin: 85px 60px 0 30px;
+    width: 25%;
+}
+
+.social-btn {
+    background-position: 30px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    height: 3em;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.social-btn:hover {
+    background-color: #8bafc5;
+}
+
+.post-text {
+    color: #ffffff;
+}
+
+.fb {
+    background-color: #4267b2;
+    background-image: url("https://www.iconsdb.com/icons/preview/white/facebook-xxl.png");
+}
+
+.twitter {
+    background-color: #1B95E0;
+    background-image: url("https://www.iconsdb.com/icons/preview/white/twitter-xxl.png");
+
+}
+
+.linkedin {
+    background-color: #0073b1;
+    background-image: url("https://www.iconsdb.com/icons/preview/white/linkedin-2-xxl.png");
+    margin-bottom: 50px;
+}
+
+.social-input {
+    font-size: 1em;
+    height: 2em;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.social-text {
+    color: #696969;
+    margin-left: 0;
+}
+
+h3.social-text {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.social-icon {
+    height: 1em;
+    margin: auto;
+    margin-right: 5px;
+    width: 1em;
+}
+
+.copy-links {
+    display: flex;
+    flex-direction: row;       
+}
+
+.copy-btn {
+    height: 38px;
+    width: 15%;
+}
+
+.copy-input {
+    width: 85%;
+}
+
+@media(min-width: 1600px) {
+    #circle1,
+    #circle2,
+    #circle3 {
+        height: 15em;
+        margin-top: auto;
+        width: 15em;
+   }
+
+   .circle-text {
+    margin-left: 0%;
+    margin-top: 80px;
+   }
+
+   #search-bar {
+        width: 100%;
+   }
+}
+
+@media(max-width: 1200px) {
+   .circles-and-graph{
+        flex-wrap: wrap;
+        justify-content: center;
+   }
+
+    #circle1,
+    #circle2,
+    #circle3 {
+        height: 10em;
+        width: 10em;
+   }
+
+   #bar-graph {
+    height: 15em;
+    margin: 0;  
+    margin-top: 100px;
+    width: 30em;
+   }
+
+   .social-btn {
+    background-position: 15px;
+   }
+}
+
+@media(max-width: 1070px) {
+
+    .website-title {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .header-buttons {
+        display: block;
+        float: inherit;
+    }
+    
+    .subheader {
+        display: block;
+    }
+    .tab-menu {
+        display: block;
+        border: none;
+    }
+
+    .graph-tabs {
+        display: none;
+    }
+
+    .bottom-third {
+        flex-direction: column;
+    }
+
+     article {
+        margin-left: 20%;
+        height: 60%;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 130%;
+    }
+
+    .social-media-area {
+        align-self: center;
+        margin-left: 140px;
+        width: 90%;
+    }
+
+    .social-btn {
+        background-position: center;
+        background-size: 2em;
+        display: inline;
+        margin: 0px 1% 25px;
+        width: 28%;
+    }
+
+    .social-input {
+        width: 89%;
+    }
+
+    .copy-links {
+        width: 90%;
+    }
+
+    .post-text {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 790px) {
+
+    .menu-btn,
+    .sidebar {
+        display: none; 
+    }
+
+}
+
+@media(max-width: 550px) {
+
+    .search-area {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #search-bar {
+        border: solid 1px #cfcfcf;
+        height: 4.5em;
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .search-btns {
+        margin: 0;
+        padding: 0;
+        width: 33.3%;
+    }
+
+    button {
+        height: 5em; 
+    }
+
+    .title-btn {
+        margin: 1px;
+    }
+
+    .website-title {
+        align-self: center;
+        margin-right: 25px;
+        padding-top: 35px;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .circles-and-graph {
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-top: 15px;
+        width: 60%;
+    }
+
+    #circle1,
+    #circle2,
+    #circle3 {
+        width: 14em;
+        margin-bottom: 0;
+        height: 12em;    
+    }
+
+    .circle-text {
+        margin-top: 65px;
+    }
+
+    #bar-graph  {
+        margin-top: 70px;
+        width: 135%; 
+    }
+
+    
+    article {
+    
+        margin-left: 10px;
+        width: 135%; 
+    }
+
+    p.key {
+        display: block;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    article > p {
+        margin-left: 15px;
+    }
+
+    
+
+    .social-media-area {
+        margin: 30px auto auto 20px; 
+        width: 80%;
+    }
+
+    .social-input {
+        margin-left: 0;
+        margin-top: 5px;
+        width: 97%;
+    }
+
+    .copy-links {
+        width: 100%;
+    }
+
+    .copy-btn {
+        margin-top: 5px;
+        width: 20%;
+    }
+}
+
+@media(max-width: 320px) {
+
+    #search-bar {
+        width: 90%;
+    }
+
+    .search-btns {
+        width: 30%;
+    }
+
+
+}
 
 
 
