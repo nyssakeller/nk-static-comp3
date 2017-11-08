@@ -511,7 +511,8 @@ h3.social-text {
     #circle2,
     #circle3 {
         height: 15em;
-        margin-top: auto;
+        margin: auto;
+        margin-bottom: 80px;
         width: 15em;
    }
 
