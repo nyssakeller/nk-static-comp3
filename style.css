@@ -46,6 +46,7 @@ button {
 button:hover {
     color: white;
     background-color: #800000;
+    border: none;
 }
 
 h2,
@@ -491,6 +492,20 @@ h3.social-text {
     width: 1em;
 }
 
+.copy-links {
+    display: flex;
+    flex-direction: row;       
+}
+
+.copy-btn {
+    height: 38px;
+    width: 15%;
+}
+
+.copy-input {
+    width: 85%;
+}
+
 @media(min-width: 1600px) {
     #circle1,
     #circle2,
@@ -528,6 +543,10 @@ h3.social-text {
     margin: 0;  
     margin-top: 100px;
     width: 30em;
+   }
+
+   .social-btn {
+    background-position: 15px;
    }
 }
 
@@ -568,17 +587,25 @@ h3.social-text {
     }
 
     .social-media-area {
-        margin-left: 10%;
-        width: 75%;
+        align-self: center;
+        margin-left: 140px;
+        width: 90%;
     }
 
     .social-btn {
         background-position: center;
         background-size: 2em;
-        display: inline-block;
-        margin: 10px    ;
-        margin-bottom: 25px;
-        width: 25%;
+        display: inline;
+        margin: 0px 1% 25px;
+        width: 28%;
+    }
+
+    .social-input {
+        width: 89%;
+    }
+
+    .copy-links {
+        width: 90%;
     }
 
     .post-text {
@@ -594,6 +621,7 @@ h3.social-text {
     .sidebar {
         display: none; 
     }
+
 }
 
 @media(max-width: 550px) {
@@ -606,12 +634,15 @@ h3.social-text {
     #search-bar {
         border: solid 1px #cfcfcf;
         height: 4.5em;
-        width: 90%;
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .search-btns {
-        margin-top: none;
-        width: 30%;
+        margin: 0;
+        padding: 0;
+        width: 33.3%;
     }
 
     button {
@@ -624,6 +655,9 @@ h3.social-text {
 
     .website-title {
         align-self: center;
+        margin-right: 25px;
+        padding-top: 35px;
+        width: 100%;
     }
 
     h1 {
@@ -632,7 +666,7 @@ h3.social-text {
 
     .circles-and-graph {
         flex-wrap: wrap;
-        align-self: center;
+        margin-left: 50px;
         margin-top: 15px;
         width: 60%;
     }
@@ -645,14 +679,20 @@ h3.social-text {
         height: 12em;    
     }
 
+    .circle-text {
+        margin-top: 65px;
+    }
+
     #bar-graph  {
-        margin-right: 35px;
         margin-top: 70px;
         width: 135%; 
     }
 
+    
     article {
-        margin-left: 15px;
+    
+        margin-left: 10px;
+        width: 135%; 
     }
 
     p.key {
@@ -668,8 +708,7 @@ h3.social-text {
     
 
     .social-media-area {
-        margin-left: 20px;
-        margin-top: 30px;
+        margin: 30px auto auto 20px; 
         width: 80%;
     }
 
@@ -678,6 +717,27 @@ h3.social-text {
         margin-top: 5px;
         width: 97%;
     }
+
+    .copy-links {
+        width: 100%;
+    }
+
+    .copy-btn {
+        margin-top: 5px;
+        width: 20%;
+    }
+}
+
+@media(max-width: 320px) {
+
+    #search-bar {
+        width: 90%;
+    }
+
+    .search-btns {
+        width: 30%;
+    }
+
 
 }
 
