@@ -3,54 +3,62 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     </head>
     <body>
         <header class="sidebar">
-            <img id="profile-pic" src="http://cimg.tvgcdn.net/i/r/2010/10/12/d2b8f338-50d2-48c2-8dd4-aae3f00d394b/crop/300x225+0+0/thumbnail/350x262/7cd65698b17ecc0e7e385de7b44e46e4/101011napoleondynamite1.jpg">
-            <h2>Napoleon Dynamite</h2>
-            <div class="interests">
-                <h4>Interests</h4>
-                <h3>Tots</h3>
-                <h3>Chapstick</h3>
-                <h3>Dancing</h3>
-                <h3>Nunchucks</h3>
-                <h3>Endorsing Pedro</h3>
+            <div class="pic-and-name">
+                <img id="profile-pic" src="http://cdn1.theodysseyonline.com/files/2016/01/11/6358807217918207881788031910_vote-for-pedro-300x300.jpg">
+                <h2>Napoleon Dynamite</h2>
             </div>
-            <div class="skills">
-                <h4>Skills</h4>
-                <h3>Nunchuck Skills</h3>
-                <h3>Bow Hunting Skills</h3>
-                <h3>Computer Hacking Skills</h3>
-                <h3>Great Skills!</h3>
+            <div class="main">
+                <h4>Main</h4>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/color/CFCFCF/home-2-xxl.png">HOME</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/color/CFCFCF/monitor-xxl.png">JOBS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/blank-file-3-xxl.png">RESUME</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/view-details-xxl.png">TASKS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/today-xxl.png">CALENDAR</h3>
             </div>
-            <div class="friends">
-                <h4>Friends</h4>
-                <h3>Pedro</h3>
-                <h3>Deb</h3>
-                <h3>Tina</h3>
-                <h3>La Fonda</h3>
+            <div class="admin">
+                <h4>Admin</h4>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/add-user-3-xxl.png">USERS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/define-location-xxl.png">LOCATIONS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/notebook-xxl.png">WORKFLOWS</h3>
+                <h3><img class="sidebar-img" src="https://www.iconsdb.com/icons/preview/white/sharethis-5-xxl.png">SOCIAL</h3>
+            </div>
+            <div class="Categories">
+                <h4>Categories</h4>
+                <h3><input class="checkbox" type="checkbox">Administrative</h3>
+                <h3><input class="checkbox"  type="checkbox">Design</h3>
+                <h3><input class="checkbox" type="checkbox">Executive</h3>
+                <h3><input class="checkbox"  type="checkbox">Human Resources</h3>
             </div>
         </header>
-        <section class="top-third">
-            <div class="search-area">
-                <button>1</button>
-                <input type="text" id="search-bar">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div>
-            <div class="bottom-half">
-                <div class="Website title">
-                    <h1>Vote for Pedro</h1>
-                    <p class="location">Denver, CO</p>
+        <div class="area-under-search">
+            <section class="top-third">
+                <div class="search-area">
+                    <button class="menu-btn search-btns"></button>
+                    <input type="text" id="search-bar">
+                    <button class="user-btn search-btns"></button>
+                    <button class="calendar-btn search-btns"></button>
+                    <button class="idea-btn search-btns"></button>
+                </div>
+            </section>
+            <section class="middle-third">
+                <div class="website-title">
+                    <h1>Computer Hacking Expert</h1>
+                    <p class="location"><img id="location-icon" src="https://www.iconsdb.com/icons/preview/gray/pin-8-xxl.png">Denver, CO</p>
                     <p class="preview-link">Preview this post</p>
-                    <button class="open">open</button>
-                    <button>mark</button>
-                    <button>edit</button>
-                    <button>delete</button>
+                    <div class="header-buttons">
+                        <button class="open title-btn">open</button>
+                        <button class="bookmark-btn title-btn"></button>
+                        <button class="title-btn edit-btn"></button>
+                        <button class="title-btn trash-btn"></button>
+                    </div>
                 </div>
                 <header class="tabs-for-body">
-                    <h3 class="graph-tabs">Summary</h3>
+                    <button class="tab-menu"><img id="menu" src="https://www.iconsdb.com/icons/preview/gray/menu-4-xxl.png"></button>
+                    <h3 class="graph-tabs summary active">Summary</h3>
                     <h3 class="graph-tabs">Applicants</h3>
                     <h3 class="graph-tabs">Job Board</h3>
                     <h3 class="graph-tabs">Interviews</h3>
@@ -59,16 +67,29 @@
                     <h3 class="graph-tabs">Notifications</h3>
                 </header>
                 <div class="circles-and-graph">
-                    <div id="circle1">hi</div>
-                    <div id="circle2"></div>
-                    <div id="circle3"></div>
-                    <img id="bar-graph" src="https://www.dyclassroom.com/image/topic/chartjs/v2/bar-graph.png">
+                    <div id="circle1">
+                    <h1 class="circle-text">9,405</h1>
+                    </div>
+                    <div id="circle2">
+                    <h1 class="circle-text">5,983</h1>
+                    </div>
+                    <div id="circle3">
+                    <h1 class="circle-text">1,543</h1>
+                    <p></p>
+                    </div>
+                    <img id="bar-graph" src="http://www.conceptdraw.com/How-To-Guide/picture/GRAPHS-AND-CHARTS-Histograms-Beetles-in-the-river-Thames.png">
                 </div>
-                <div class="job-description-area">
-                    <table>
-                        <th>Job Description</th>
+                <div class="graph-buttons">
+                    <button class="total graph-btn">Totals: 16,931</button>
+                    <button class="tots graph-btn">Tots I Eat Per Day</button>
+                </div>
+            </section>
+            <section class="bottom-third">
+                <div class="job-description-area">   
+                    <table>  
+                    <th>Job Description</th>   
                         <tr>
-                            <td>Position Title</td>
+                            <td>Position</td>
                             <td>Campaign Manager</td>
                         </tr>
                         <tr>
@@ -76,7 +97,7 @@
                             <td>Denver</td>
                         </tr>
                         <tr>
-                            <td>Employment Type</td>
+                            <td>Employment</td>
                             <td>Part-time</td>
                         </tr>
                         <tr>
@@ -102,17 +123,25 @@
                     </table>
                 </div>
                 <div class="social-media-area">
-                    <button class="fb social-btn">Post to Facebook</button>
+                    <button class="fb social-btn">
+                    Post to Facebook
+                    </button>
                     <button class="twitter social-btn">Post to Twitter</button>
                     <button class="linkedin social-btn">Post to Linkedin</button>
-                    <h3>Link to this Job</h3>
-                    <input type="text" placeholder="www.ihavegreatskills.com">
-                    <h3>Use the Button Widget</h3>
-                    <input type="text" placeholder="www.checkoutmynunchucks.com">
-                    <h3>Upload Resumes by Email</h3>
-                    <input type="text" placeholder="ihearttots@gmail.com">
+                    <h3 class="social-text">Link to this Job</h3>
+                    <p class="social-text">If you'd like to find out more about my great skills, click on this link.</p>
+                    <input class="social-input" type="text" placeholder="www.ihavegreatskills.com">
+                    <h3 class="social-text">Buy Some of my Nunchucks</h3>
+                    <p class="social-text">To checkout my nunchucks, click on this link</p>
+                    <input class="social-input" type="text" placeholder="www.mynunchucks.com">
+                    <h3 class="social-text">Upload Resumes by Email</h3>
+                    <p class="social-text">If you want to work for me, email me your resume, gosh.</p>
+                    <input class="social-input" type="text" placeholder="ihearttots@gmail.com">
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="scripts.js" type="text/javascript"></script>
     </body>
 

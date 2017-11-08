@@ -1,58 +1,519 @@
-/*Sidebar styles*/
-* {
+body {
     box-sizing: border-box;
+    color: #696969;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
 }
 
-.top-third {
+.area-under-search {
+    background-color: rgba(50, 50, 53, 0.17);
     display: flex;
     flex-direction: column;
 }
 
+.middle-third {
+    border-bottom: solid 2px rgba(238, 229, 229, 0.94);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.bottom-third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.job-description-area {
+    width: 50%;
+}
+
+
+img {
+    height: 2em;
+    margin: 20px 10px 0 0;
+    width: 2em;
+}
+
+button {
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    height: 5.5em;
+    width: 7em;
+    background-size: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button:hover {
+    color: white;
+    background-color: #800000;
+}
+
+h2,
+h3,
+h4 {
+    color: #cfcfcf;
+}
+
+
+/*Sidebar Styles*/
+
+.sidebar {
+    background-color: #323235;
+    width: 15em;
+}
+
+#profile-pic {
+    border-radius: 10em;
+    height: 7em;
+    margin: 30px 60px 5px;
+    width: 7em;
+}
+
+h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+}
+
+h2,
+h3 {
+    font-size: 15px;
+    margin: 0px;
+}
+
+h3,
+h4 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.sidebar-img {
+    height: 20px;
+    width: 20px;
+}
+
+.pic-and-name,
+.main,
+.admin {
+    border-bottom: solid 2px #27282e;
+    padding-bottom: 15px;
+}
+
+
+
+input.checkbox {
+    height: 2em;
+    width: 2em;
+}
+
+/*Search Bar Styles*/
 
 .search-area {
     display: flex;
-    flex-direction: row;
-    left: 15em;
-   
-}
-
-#search-bar,
-button {
-    height: 5em;
-    width: 5em;
+    flex-direction: row;  
 }
 
 #search-bar {
-    width: 90em;
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/search-13-xxl.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    height: 5em;
+    width: 80%;
+}
+
+.menu-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/menu-4-xxl.png');
+}
+
+.menu-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/menu-4-xxl.png');
+}
+
+.user-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/color/999999/add-user-3-xxl.png');
+}
+
+.user-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/add-user-3-xxl.png');
+}
+
+.calendar-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/today-xxl.png');
+}
+
+.calendar-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/today-xxl.png');
+}
+
+.idea-btn{
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/light-bulb-5-xxl.png');
+}
+
+.idea-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/light-bulb-5-xxl.png');
+}
+/*Title Area Styles*/
+
+.website-title {
+    background-color: #ffffff;
+    padding: 20px 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: -10px;
+}
+
+p {
+    color: #696969;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#location-icon {
+    height: 10px;
+    margin-right: 0;
+    margin: auto;
+    width: 10px;
+}
+
+.header-buttons {
+    display: inline;
+    float: right;
+   }
+
+.title-btn {
+    background-size: 1.5em;
+    border-radius: 40px;
+    height: 30px !important;
+    margin-right: 15px;
+    width: 30px;
+}
+
+.bookmark-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/color/999999/bookmark-2-xxl.png');
+}
+
+.bookmark-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/bookmark-2-xxl.png');
+}
+
+.edit-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/edit-xxl.png');
+}
+
+.edit-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/edit-xxl.png')
+}
+
+.trash-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/color/999999/delete-xxl.png');
+}
+
+.trash-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/delete-xxl.png');
+}
+
+.open {
+    background-image: url('https://www.iconsdb.com/icons/preview/green/circle-xxl.png');
+    background-size: 10px;
+    background-position: 25% 60%;
+    font-size: 1em;
+    padding: 7px;
+    width: 120px;
+}
+
+.open:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/circle-xxl.png');
+}
+
+/*Data Area*/
+
+.tabs-for-body {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.tab-menu {
+    display: none;
 }
 
 .graph-tabs {
+    color: #696969;
     display: inline-block;
+    font-weight: 700;
+    margin: 10px 1.5rem 20px;
+}
+
+.summary,
+.graph-tabs:hover {
+    color: #800000;
+    border-bottom: 5px #800000 solid;
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .circles-and-graph {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;  
+    margin: 70px 40px 0;  
 }
+
 #circle1,
 #circle2,
 #circle3 {
-    width: 10em;
-    height: 10em;
-    border: red 2px solid;
-    -moz-border-radius: 5em;
-    -webkit-border-radius: 5em;
-    border-radius: 5em;
+    width: 13rem;
+    height: 10rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
     text-align: center;
+    margin: 10px;
+    margin-top: 40px;
 }
+
+#circle1 {
+    border-top: #800000 solid 15px;
+    border-left: #800000 solid 15px;
+    border-right: #800000 solid 15px;
+    border-bottom: #bfbebe solid 15px;
+}
+
+#circle2 {
+    border-top: #bfbebe solid 15px;
+    border-left: #000033 solid 15px;
+    border-right: #bfbebe solid 15px;
+    border-bottom: #bfbebe solid 15px; 
+}
+
+#circle3 {
+    border-top: #bfbebe solid 15px;
+    border-left: #bfbebe solid 15px;
+    border-right: #bfbebe solid 15px;
+    border-bottom: #806000 solid 15px; 
+}
+
+.circle-text {
+    margin-top: 55px;
+}
+
 
 #bar-graph {
-    height: 10em;
-    width: 15em;
+    height: 15em;
+    margin-left: 5%;
+    margin-right: 0px;
+    width: 40%;
+}
+
+.graph-btn {
+    display: inline-block;
+    border-radius: 15px;
+    height: 25px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    width: 11em;
+}
+
+button.total {
+    margin-left: 23%;
+}
+
+button.tots {
+    float: right;
+    margin-right: 17%;
+}
+
+/*Job Description Styles*/
+
+.job-description-area {
+    width: 60%;
+}
+
+table {
+    background-color: #ffffff;
+    border: none;
+    height: 35em;
+    margin: 95px;
+    margin-left: 50px;
+    width: 100%;
+}
+
+tr.table-heading {
+    background-color: #2e4057;
+    margin: 0;
+    
+}
+
+/*Social Media Styles*/
+
+.social-media-area {
+    display: flex;
+    flex-direction: column;
+    height: 35em;
+    margin-top: 90px;
+    margin-right: 60px;
+    width: 25%;
+}
+
+.social-btn {
+    background-size: 2em;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    height: 3em;
+    margin: 10px 0;
+    padding: 17px; 
+    width: 100%;
+}
+
+.social-input {
+    font-size: 1em;
+    height: 4em;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.social-text {
+    color: #696969;
+    margin-left: 0;
+}
+
+h3.social-text {
+    font-weight: 700;
 }
 
 
+.fb {
+    background-color: #4267b2;
+    background-image: url("https://www.iconsdb.com/icons/preview/white/facebook-xxl.png");
+}
+
+.twitter {
+    background-color: #1B95E0;
+    background-image: url("https://www.iconsdb.com/icons/preview/white/twitter-xxl.png");
+
+}
+
+.linkedin {
+    background-color: #0073b1;
+    background-image: url("https://www.iconsdb.com/icons/preview/white/linkedin-2-xxl.png");
+    margin-bottom: 50px;
+}
+
+
+@media(max-width: 1190px) {
+   .circles-and-graph{
+        flex-wrap: wrap;
+        justify-content: center;
+   }
+
+    #circle1,
+    #circle2,
+    #circle3 {
+        height: 10em;
+        width: 10em;
+   }
+
+   #bar-graph {
+    height: 15em;
+    margin: 0;  
+    margin-top: 100px;
+    width: 60%;
+   }
+}
+
+@media(max-width: 1040px) {
+
+    .tab-menu {
+        display: block;
+        border: none;
+    }
+
+    .graph-tabs {
+        display: none;
+    }
+}
+
+@media(max-width: 420px) {
+
+    .search-area {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #search-bar {
+        border: solid 1px #999;
+        height: 4.5em;
+        width: 100%;
+    }
+
+    .menu,
+    .sidebar {
+        display: none; 
+    }
+
+    button {
+        height: 5em;
+        width: 7.5em;
+    }
+
+    h1 {
+        margin-left: 0;
+    }
+
+    .circles-and-graph {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        width: 30%;
+    }
+
+    #bar-graph  {
+        margin-left: 5px;
+        width: 80%; 
+    }
+
+    table {
+        margin-left: 5px;
+        width: 60%;
+    }
+
+    .bottom-third {
+        flex-direction: column;
+    }
+
+    .social-media-area {
+        margin: 5px;
+        width: 15em;
+    }
+
+    .social-input {
+        margin: 5px;
+        width: 14.5em;
+    }
+
+    #circle1,
+    #circle2,
+    #circle3 {
+        width: 10rem;
+        height: 10rem;
+        -moz-border-radius: 10rem;
+        -webkit-border-radius: 10rem;
+        border-radius: 10rem;
+        text-align: center;
+        margin: auto;
+}
+
+}
 
 
 
