@@ -1,9 +1,9 @@
 body {
-    box-sizing: border-box;
     color: #696969;
     display: flex;
     flex-direction: row;
     font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
     margin: 0;
 }
 
@@ -26,12 +26,6 @@ body {
     justify-content: space-between;
 }
 
-
-.job-description-area {
-    width: 50%;
-}
-
-
 img {
     height: 2em;
     margin: 20px 10px 0 0;
@@ -40,7 +34,8 @@ img {
 
 button {
     background-color: #ffffff;
-    border: 1px solid #999999;
+    border: 1px solid #cfcfcf;
+    color: #696969;
     height: 5.5em;
     width: 7em;
     background-size: 2em;
@@ -64,7 +59,6 @@ h4 {
 
 .sidebar {
     background-color: #323235;
-    width: 15em;
 }
 
 #profile-pic {
@@ -80,6 +74,17 @@ h2 {
     margin-left: 0;
 }
 
+#name-down-arrow {
+    height: 10px;
+    margin-left: 5px;
+    width: 10px;
+}
+
+h4{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
 h2,
 h3 {
     font-size: 15px;
@@ -90,12 +95,30 @@ h3,
 h4 {
     font-size: 15px;
     font-weight: 400;
-    margin-left: 20px;
+}
+
+.main > h3,
+.admin > h3,
+.categories > h3 {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.main > h3:hover,
+.admin > h3:hover,
+.categories > h3:hover {
+    background-color: #1e1e1e;
 }
 
 .sidebar-img {
     height: 20px;
     width: 20px;
+}
+
+.sidebar-sqr {
+    height: 1em;
+    margin-left: 20px;
+    width: 1em;
 }
 
 .pic-and-name,
@@ -121,10 +144,9 @@ input.checkbox {
 
 #search-bar {
     background-image: url('https://www.iconsdb.com/icons/preview/gray/search-13-xxl.png');
-    background-position: left center;
+    background-position: 10px;
     background-repeat: no-repeat;
     background-size: 2em;
-    height: 5em;
     width: 80%;
 }
 
@@ -163,19 +185,27 @@ input.checkbox {
 
 .website-title {
     background-color: #ffffff;
-    padding: 20px 40px;
+    padding: 20px 40px 60px;
 }
 
 h1 {
     font-size: 2rem;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
+}
+
+.subheader {
+    display: inline-block;
 }
 
 p {
     color: #696969;
     display: inline-block;
     font-size: 15px;
-    margin-right: 10px;
+    margin-right: 20px; 
+}
+
+.preview-link {
+    color: #002db0;
 }
 
 #location-icon {
@@ -186,15 +216,14 @@ p {
 }
 
 .header-buttons {
-    display: inline;
     float: right;
-   }
+}
 
 .title-btn {
     background-size: 1.5em;
     border-radius: 40px;
     height: 30px !important;
-    margin-right: 15px;
+    margin-right: 20px;
     width: 30px;
 }
 
@@ -280,55 +309,44 @@ p {
     margin-top: 40px;
 }
 
+.circle-text {
+    margin-top: 45px;
+}
+
+#circle1 > p,
+#circle2 > p,
+#circle3 > p {
+    margin: auto;
+}
+
 #circle1 {
-    border-top: #800000 solid 15px;
+    border-bottom: #bfbebe solid 15px;
     border-left: #800000 solid 15px;
     border-right: #800000 solid 15px;
-    border-bottom: #bfbebe solid 15px;
+    border-top: #800000 solid 15px;
 }
 
 #circle2 {
-    border-top: #bfbebe solid 15px;
+    border-bottom: #bfbebe solid 15px; 
     border-left: #000033 solid 15px;
     border-right: #bfbebe solid 15px;
-    border-bottom: #bfbebe solid 15px; 
+    border-top: #000033 solid 15px;
 }
 
 #circle3 {
-    border-top: #bfbebe solid 15px;
+    border-bottom: #806000 solid 15px; 
     border-left: #bfbebe solid 15px;
     border-right: #bfbebe solid 15px;
-    border-bottom: #806000 solid 15px; 
-}
-
-.circle-text {
-    margin-top: 55px;
+    border-top: #bfbebe solid 15px;
 }
 
 
 #bar-graph {
     height: 15em;
     margin-left: 5%;
-    margin-right: 0px;
+    margin-right: 20px;
+    padding-bottom: 100px;
     width: 40%;
-}
-
-.graph-btn {
-    display: inline-block;
-    border-radius: 15px;
-    height: 25px;
-    margin-top: 30px;
-    margin-bottom: 90px;
-    width: 11em;
-}
-
-button.total {
-    margin-left: 23%;
-}
-
-button.tots {
-    float: right;
-    margin-right: 17%;
 }
 
 /*Job Description Styles*/
@@ -337,61 +355,100 @@ button.tots {
     width: 60%;
 }
 
-table {
+article {
     background-color: #ffffff;
-    border: none;
     height: 35em;
     margin: 95px;
     margin-left: 50px;
+    padding-bottom: 15px;
     width: 100%;
 }
 
-tr.table-heading {
-    background-color: #2e4057;
-    margin: 0;
-    
+article > p {
+    margin: 5px;
+    margin-right: 15px;
+    overflow-wrap: break-word;
+    padding-left: 20px; 
+    width: 45%;
 }
+
+p.key {
+    margin-left: 15px;  
+    width: 15%;
+}
+
+article > h3 {
+    background-color: #800000;
+    font-size: 20px;
+    margin: 0;
+    padding: 25px 0 30px 15px;
+}
+
+hr {
+    color: #800000;
+    width: 95%;
+}
+
+h3 > .edit-btn {
+    background-color: rgb(92, 15, 23);
+    background-position: 15%;
+    background-size: 15px;
+    border: none;
+    color: #cfcfcf;
+    font-size: 10px;
+    height: 3em;
+    margin-left: 15px;
+    padding-left: 20px;
+    width: 6em;
+}
+
+h3 > .edit-btn:hover {
+    background-color: #563030;
+    color: #ffffff;
+}
+
+#pedro-img {
+    border-radius: 50%;
+}
+
+
+.description,
+.hiring-lead {
+    margin-bottom: 15px;
+}
+
+
 
 /*Social Media Styles*/
 
 .social-media-area {
-    display: flex;
-    flex-direction: column;
+    display: block;
     height: 35em;
-    margin-top: 90px;
     margin-right: 60px;
+    margin-top: 85px;
+    margin: 85px 60px 0 30px;
     width: 25%;
 }
 
 .social-btn {
-    background-size: 2em;
+    background-position: 30px;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-size: 20px;
     border: none;
     color: #ffffff;
     font-size: 15px;
     height: 3em;
     margin: 10px 0;
-    padding: 17px; 
     width: 100%;
 }
 
-.social-input {
-    font-size: 1em;
-    height: 4em;
-    margin-bottom: 25px;
-    width: 100%;
+.social-btn:hover {
+    background-color: #8bafc5;
 }
 
-.social-text {
-    color: #696969;
-    margin-left: 0;
+.post-text {
+    color: #ffffff;
 }
-
-h3.social-text {
-    font-weight: 700;
-}
-
 
 .fb {
     background-color: #4267b2;
@@ -410,8 +467,50 @@ h3.social-text {
     margin-bottom: 50px;
 }
 
+.social-input {
+    font-size: 1em;
+    height: 2em;
+    margin-bottom: 25px;
+    width: 100%;
+}
 
-@media(max-width: 1190px) {
+.social-text {
+    color: #696969;
+    margin-left: 0;
+}
+
+h3.social-text {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.social-icon {
+    height: 1em;
+    margin: auto;
+    margin-right: 5px;
+    width: 1em;
+}
+
+@media(min-width: 1600px) {
+    #circle1,
+    #circle2,
+    #circle3 {
+        height: 15em;
+        margin-top: auto;
+        width: 15em;
+   }
+
+   .circle-text {
+    margin-left: 0%;
+    margin-top: 80px;
+   }
+
+   #search-bar {
+        width: 100%;
+   }
+}
+
+@media(max-width: 1200px) {
    .circles-and-graph{
         flex-wrap: wrap;
         justify-content: center;
@@ -428,12 +527,25 @@ h3.social-text {
     height: 15em;
     margin: 0;  
     margin-top: 100px;
-    width: 60%;
+    width: 30em;
    }
 }
 
-@media(max-width: 1040px) {
+@media(max-width: 1070px) {
 
+    .website-title {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .header-buttons {
+        display: block;
+        float: inherit;
+    }
+    
+    .subheader {
+        display: block;
+    }
     .tab-menu {
         display: block;
         border: none;
@@ -442,9 +554,49 @@ h3.social-text {
     .graph-tabs {
         display: none;
     }
+
+    .bottom-third {
+        flex-direction: column;
+    }
+
+     article {
+        margin-left: 20%;
+        height: 60%;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 130%;
+    }
+
+    .social-media-area {
+        margin-left: 10%;
+        width: 75%;
+    }
+
+    .social-btn {
+        background-position: center;
+        background-size: 2em;
+        display: inline-block;
+        margin: 10px    ;
+        margin-bottom: 25px;
+        width: 25%;
+    }
+
+    .post-text {
+        display: none;
+    }
+
+
 }
 
-@media(max-width: 420px) {
+@media(max-width: 790px) {
+
+    .menu-btn,
+    .sidebar {
+        display: none; 
+    }
+}
+
+@media(max-width: 550px) {
 
     .search-area {
         flex-wrap: wrap;
@@ -452,66 +604,80 @@ h3.social-text {
     }
 
     #search-bar {
-        border: solid 1px #999;
+        border: solid 1px #cfcfcf;
         height: 4.5em;
-        width: 100%;
+        width: 90%;
     }
 
-    .menu,
-    .sidebar {
-        display: none; 
+    .search-btns {
+        margin-top: none;
+        width: 30%;
     }
 
     button {
-        height: 5em;
-        width: 7.5em;
+        height: 5em; 
+    }
+
+    .title-btn {
+        margin: 1px;
+    }
+
+    .website-title {
+        align-self: center;
     }
 
     h1 {
-        margin-left: 0;
+        margin: 0;
     }
 
     .circles-and-graph {
         flex-wrap: wrap;
-        margin-left: 0px;
-        width: 30%;
-    }
-
-    #bar-graph  {
-        margin-left: 5px;
-        width: 80%; 
-    }
-
-    table {
-        margin-left: 5px;
+        align-self: center;
+        margin-top: 15px;
         width: 60%;
-    }
-
-    .bottom-third {
-        flex-direction: column;
-    }
-
-    .social-media-area {
-        margin: 5px;
-        width: 15em;
-    }
-
-    .social-input {
-        margin: 5px;
-        width: 14.5em;
     }
 
     #circle1,
     #circle2,
     #circle3 {
-        width: 10rem;
-        height: 10rem;
-        -moz-border-radius: 10rem;
-        -webkit-border-radius: 10rem;
-        border-radius: 10rem;
-        text-align: center;
-        margin: auto;
-}
+        width: 14em;
+        margin-bottom: 0;
+        height: 12em;    
+    }
+
+    #bar-graph  {
+        margin-right: 35px;
+        margin-top: 70px;
+        width: 135%; 
+    }
+
+    article {
+        margin-left: 15px;
+    }
+
+    p.key {
+        display: block;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    article > p {
+        margin-left: 15px;
+    }
+
+    
+
+    .social-media-area {
+        margin-left: 20px;
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .social-input {
+        margin-left: 0;
+        margin-top: 5px;
+        width: 97%;
+    }
 
 }
 
