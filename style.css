@@ -150,7 +150,7 @@ h4 {
     width: 100%;
 }
 
-#search-bar::-webkit-input-placeholder {
+#search-bar::placeholder {
     color: #696969;
     font-size: 15px;
     padding-left: 35px;
@@ -554,7 +554,7 @@ h3 > .edit-btn:hover,
     width: 100%;
 }
 
-.social-input::-webkit-input-placeholder{
+.social-input::placeholder{
     opacity: .5;
     padding-left: 10px;
 }
