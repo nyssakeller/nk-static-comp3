@@ -808,7 +808,7 @@ h3.social-text {
     }
 
     article {
-        height: 60em;
+        height: 65em;
         margin-top: 25px;
     }
 
@@ -819,7 +819,7 @@ h3.social-text {
     .social-media-area {
         margin: auto; 
         margin-top: 75px;
-        padding-bottom: 35%;
+        padding-bottom: 75%;
     }
 
     .social-input {
