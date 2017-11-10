@@ -150,7 +150,7 @@ h4 {
     width: 100%;
 }
 
-#search-bar::-webkit-input-placeholder {
+#search-bar::placeholder {
     color: #696969;
     font-size: 15px;
     padding-left: 35px;
@@ -554,7 +554,7 @@ h3 > .edit-btn:hover,
     width: 100%;
 }
 
-.social-input::-webkit-input-placeholder{
+.social-input::placeholder{
     opacity: .5;
     padding-left: 10px;
 }
@@ -808,7 +808,7 @@ h3.social-text {
     }
 
     article {
-        height: 60em;
+        height: 65em;
         margin-top: 25px;
     }
 
@@ -819,7 +819,7 @@ h3.social-text {
     .social-media-area {
         margin: auto; 
         margin-top: 75px;
-        padding-bottom: 35%;
+        padding-bottom: 75%;
     }
 
     .social-input {
