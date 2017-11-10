@@ -3,7 +3,6 @@ body {
     display: flex;
     flex-direction: row;
     font-family: 'Source Sans Pro', sans-serif;
-    height: 100%;
     margin: 0;
 }
 
@@ -14,7 +13,6 @@ body {
 }
 
 .middle-third {
-    border-bottom: solid 2px rgba(238, 229, 229, 0.94);
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -24,6 +22,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 10%;
 }
 
 img {
@@ -46,7 +46,7 @@ button {
 button:hover {
     color: white;
     background-color: #800000;
-    border: none;
+    border-color: #800000;
 }
 
 h2,
@@ -113,12 +113,15 @@ h4 {
 
 .sidebar-img {
     height: 20px;
+    position: relative;
+    top: 5px;
     width: 20px;
 }
 
 .sidebar-sqr {
     height: 1em;
-    margin-left: 20px;
+    position: relative;
+    top: 3px;
     width: 1em;
 }
 
@@ -130,25 +133,28 @@ h4 {
 }
 
 
-
-input.checkbox {
-    height: 2em;
-    width: 2em;
-}
-
 /*Search Bar Styles*/
 
 .search-area {
-    display: flex;
-    flex-direction: row;  
+     display: flex;
+     flex-direction: row;
 }
 
 #search-bar {
     background-image: url('https://www.iconsdb.com/icons/preview/gray/search-13-xxl.png');
     background-position: 10px;
     background-repeat: no-repeat;
-    background-size: 2em;
-    width: 80%;
+    background-size: 17px;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+#search-bar::-webkit-input-placeholder {
+    color: #696969;
+    font-size: 15px;
+    padding-left: 35px;
+    opacity: .5;
 }
 
 .menu-btn {
@@ -186,7 +192,7 @@ input.checkbox {
 
 .website-title {
     background-color: #ffffff;
-    padding: 20px 40px 60px;
+    padding: 10px 40px 10px;
 }
 
 h1 {
@@ -220,10 +226,11 @@ p {
     float: right;
 }
 
-.title-btn {
+.title-btn,
+.page-break-btn {
     background-size: 1.5em;
     border-radius: 40px;
-    height: 30px !important;
+    height: 30px;
     margin-right: 20px;
     width: 30px;
 }
@@ -256,8 +263,9 @@ p {
     background-image: url('https://www.iconsdb.com/icons/preview/green/circle-xxl.png');
     background-size: 10px;
     background-position: 25% 60%;
+    bottom: 7px;
     font-size: 1em;
-    padding: 7px;
+    position: relative;
     width: 120px;
 }
 
@@ -293,20 +301,32 @@ p {
 
 .circles-and-graph {
     display: flex;
-    flex-direction: row;  
-    margin: 70px 40px 0;  
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 20px 0;  
+}
+
+.circle-area {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
 }
 
 #circle1,
 #circle2,
 #circle3 {
-    width: 13rem;
+    width: 10rem;
     height: 10rem;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
     margin-top: 40px;
 }
 
@@ -332,6 +352,7 @@ p {
     border-left: #000033 solid 15px;
     border-right: #bfbebe solid 15px;
     border-top: #000033 solid 15px;
+    margin-left: 20px;
 }
 
 #circle3 {
@@ -341,48 +362,101 @@ p {
     border-top: #bfbebe solid 15px;
 }
 
+.circle-totals-btn {
+    display: block;
+}
+
+.bar-graph-area {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    margin-left: 35px;
+    width: 35%;
+}
 
 #bar-graph {
+    float: right;
     height: 15em;
-    margin-left: 5%;
     margin-right: 20px;
-    padding-bottom: 100px;
-    width: 40%;
+    margin-bottom: 20px;
+    width: 100%;
 }
+
+.circle-data-btn,
+.bar-graph-btn {
+    border-radius: 2em;
+    height: 3em;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 15em;
+}
+
+/*Page Separater*/
+
+.page-break {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.spacer-border {
+    border-bottom: solid 2px rgba(238, 229, 229, 0.94);
+    width: 50%;
+}
+
+.page-break-btn {
+    background-image: url('https://www.iconsdb.com/icons/preview/gray/arrow-141-xxl.png');
+    margin: 0;
+}
+
+.page-break-btn:hover {
+    background-image: url('https://www.iconsdb.com/icons/preview/white/arrow-141-xxl.png');
+}
+
 
 /*Job Description Styles*/
 
 .job-description-area {
-    width: 60%;
+    margin: auto;
+    width: 80%;
 }
 
 article {
     background-color: #ffffff;
-    height: 35em;
-    margin: 95px;
-    margin-left: 50px;
-    padding-bottom: 15px;
-    width: 100%;
+    box-sizing: border-box;
+    height: 47em;
+    margin: auto;
+    width: 87%;
 }
 
 article > p {
     margin: 5px;
     margin-right: 15px;
     overflow-wrap: break-word;
-    padding-left: 20px; 
-    width: 45%;
+    padding: 17px 0 17px;
+    width: 70%;
 }
 
-p.key {
+.hiring-lead-name {
+    width: 40%;
+}
+
+h3.key {
+    color: #696969;
+    display: inline-block;
+    font-weight: 700;
     margin-left: 15px;  
-    width: 15%;
+    width: 20%;
 }
 
-article > h3 {
+.table-title {
     background-color: #800000;
     font-size: 20px;
+    padding: 20px;
     margin: 0;
-    padding: 25px 0 30px 15px;
 }
 
 hr {
@@ -403,13 +477,17 @@ h3 > .edit-btn {
     width: 6em;
 }
 
-h3 > .edit-btn:hover {
+h3 > .edit-btn:hover,
+.copy-btn:hover {
     background-color: #563030;
     color: #ffffff;
 }
 
 #pedro-img {
     border-radius: 50%;
+    position: relative;
+    left: 5px;
+    top: 10px;
 }
 
 
@@ -419,7 +497,6 @@ h3 > .edit-btn:hover {
 }
 
 
-
 /*Social Media Styles*/
 
 .social-media-area {
@@ -427,19 +504,20 @@ h3 > .edit-btn:hover {
     height: 35em;
     margin-right: 60px;
     margin-top: 85px;
-    margin: 85px 60px 0 30px;
+    margin-right: 60px;
+    margin-top: 0;
     width: 25%;
 }
 
 .social-btn {
-    background-position: 30px;
+    background-position: 10px;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 15px;
     border: none;
     color: #ffffff;
     font-size: 15px;
     height: 3em;
-    margin: 10px 0;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -449,6 +527,7 @@ h3 > .edit-btn:hover {
 
 .post-text {
     color: #ffffff;
+    text-align: center;
 }
 
 .fb {
@@ -471,8 +550,17 @@ h3 > .edit-btn:hover {
 .social-input {
     font-size: 1em;
     height: 2em;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     width: 100%;
+}
+
+.social-input::-webkit-input-placeholder{
+    opacity: .5;
+    padding-left: 10px;
+}
+
+.social-input-headding {
+    padding-top: 30px;
 }
 
 .social-text {
@@ -482,7 +570,7 @@ h3 > .edit-btn:hover {
 
 h3.social-text {
     font-weight: 700;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .social-icon {
@@ -498,8 +586,12 @@ h3.social-text {
 }
 
 .copy-btn {
-    height: 38px;
-    width: 15%;
+    background-color: #800000;
+    border: none;
+    color: #ffffff;
+    height: 36px;
+    margin-top: 1px;
+    width: 20%;
 }
 
 .copy-input {
@@ -510,10 +602,11 @@ h3.social-text {
     #circle1,
     #circle2,
     #circle3 {
-        height: 15em;
+        height: 14em;
         margin: auto;
         margin-bottom: 80px;
-        width: 15em;
+        margin-left: 40px;
+        width: 14em;
    }
 
    .circle-text {
@@ -527,9 +620,14 @@ h3.social-text {
 }
 
 @media(max-width: 1200px) {
+   
    .circles-and-graph{
         flex-wrap: wrap;
         justify-content: center;
+   }
+
+   .circle-area {
+        padding: 0;
    }
 
     #circle1,
@@ -539,11 +637,23 @@ h3.social-text {
         width: 10em;
    }
 
+   .circle-data-btn {
+        margin-top: 20px;
+   }
+
+   .bar-graph-area {
+        margin: 0; 
+        width: 65%;
+   }
+
+   .bottom-third {
+        padding-bottom: 15%;
+    }
+
    #bar-graph {
-    height: 15em;
-    margin: 0;  
-    margin-top: 100px;
-    width: 30em;
+    height: 15em;  
+    margin-top: 10px;
+    
    }
 
    .social-btn {
@@ -566,6 +676,7 @@ h3.social-text {
     .subheader {
         display: block;
     }
+
     .tab-menu {
         display: block;
         border: none;
@@ -579,53 +690,47 @@ h3.social-text {
         flex-direction: column;
     }
 
-     article {
-        margin-left: 20%;
-        height: 60%;
-        margin-bottom: 10px;
-        padding: 5px;
-        width: 130%;
-    }
-
     .social-media-area {
-        align-self: center;
-        margin-left: 140px;
-        width: 90%;
+        margin: auto;
+        margin-top: 70px;
+        width: 70%;
     }
 
     .social-btn {
         background-position: center;
         background-size: 2em;
         display: inline;
-        margin: 0px 1% 25px;
-        width: 28%;
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 32.85%;
+    }
+
+    .social-btn:hover {
+        border-bottom: 0 solid transparent;
     }
 
     .social-input {
-        width: 89%;
+        width: 99%;
     }
 
     .copy-links {
-        width: 90%;
+        width: 100%;
     }
 
     .post-text {
         display: none;
     }
-
-
 }
 
-@media(max-width: 790px) {
+@media(max-width: 890px) {
 
     .menu-btn,
     .sidebar {
         display: none; 
     }
-
 }
 
-@media(max-width: 550px) {
+@media(max-width: 650px) {
 
     .search-area {
         flex-wrap: wrap;
@@ -636,11 +741,11 @@ h3.social-text {
         border: solid 1px #cfcfcf;
         height: 4.5em;
         margin-right: 0;
-        padding: 0;
-        width: 100%;
+        padding: 0;  
     }
 
     .search-btns {
+        display: inline-block;
         margin: 0;
         padding: 0;
         width: 33.3%;
@@ -656,7 +761,6 @@ h3.social-text {
 
     .website-title {
         align-self: center;
-        margin-right: 25px;
         padding-top: 35px;
         width: 100%;
     }
@@ -666,34 +770,35 @@ h3.social-text {
     }
 
     .circles-and-graph {
-        flex-wrap: wrap;
-        margin-left: 50px;
-        margin-top: 15px;
-        width: 60%;
+        margin-left: 0
+        margin-right: 0;
+        margin: auto;
+        width: 65%;
+    }
+
+    .circles{
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-top: 25px;
     }
 
     #circle1,
     #circle2,
     #circle3 {
-        width: 14em;
-        margin-bottom: 0;
-        height: 12em;    
+        margin-bottom: 0;     
     }
 
     .circle-text {
         margin-top: 65px;
     }
 
-    #bar-graph  {
-        margin-top: 70px;
-        width: 135%; 
+    .bar-graph-area {
+        margin: 25px 0;
+        width: 100%;
     }
 
-    
-    article {
-    
-        margin-left: 10px;
-        width: 135%; 
+    .bar-graph-btn {
+        margin-bottom: 10px;
     }
 
     p.key {
@@ -702,15 +807,19 @@ h3.social-text {
         width: 100%;
     }
 
+    article {
+        height: 60em;
+        margin-top: 25px;
+    }
+
     article > p {
         margin-left: 15px;
     }
 
-    
-
     .social-media-area {
-        margin: 30px auto auto 20px; 
-        width: 80%;
+        margin: auto; 
+        margin-top: 75px;
+        padding-bottom: 35%;
     }
 
     .social-input {
@@ -719,28 +828,22 @@ h3.social-text {
         width: 97%;
     }
 
+    .social-btn {
+        display: block;
+        width: 100%;
+    }
+
     .copy-links {
         width: 100%;
     }
 
     .copy-btn {
         margin-top: 5px;
+        height: 38px;
         width: 20%;
     }
 }
 
-@media(max-width: 320px) {
-
-    #search-bar {
-        width: 90%;
-    }
-
-    .search-btns {
-        width: 30%;
-    }
-
-
-}
 
 
 
